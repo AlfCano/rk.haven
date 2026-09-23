@@ -1,0 +1,41 @@
+<!DOCTYPE rkplugin >
+<document>
+	<!--
+		this code was generated using the rkwarddev package.
+	perhaps don't make changes here, but in the rkwarddev script instead!
+	-->
+	<code file="ProfessionalExporthaven.js" />
+	<help file="ProfessionalExporthaven.rkh" />
+	<!--
+		<dependencies>
+		</dependencies>
+	-->
+	<logic>
+		<!--
+			<convert id="!edit!" sources="!edit!" mode="equals" standard="!edit!" />
+		-->
+		<!--
+			<connect governor="!edit!.state" client="!edit!.enabled" />
+		-->
+	</logic>
+	<dialog label="Professional Data Exporter (haven)">
+		<row id="row_vDEFSPSSSS">
+			<varselector id="exp_sel" />
+			<column id="clm_vDEFSPSSSS">
+				<varslot id="exp_df" label="Dataframe to export" source="exp_sel" classes="data.frame" required="true" />
+				<frame id="frm_dEFSPSSSSA">
+					<dropdown id="exp_fmt" label="Export Format">
+						<option label="SPSS (.sav)" value="spss" checked="true" />
+						<option label="Stata (.dta)" value="stata" />
+						<option label="SAS Transport (.xpt)" value="xpt" />
+					</dropdown>
+				</frame>
+				<frame label="Save Options" id="frm_SavOptns">
+					<browser label="Destination File" type="savefile" id="exp_file" />
+					<checkbox id="exp_auto_ext" label="Automatically append extension if missing" value="TRUE" checked="true" />
+				</frame>
+				<stretch />
+			</column>
+		</row>
+	</dialog>
+</document>

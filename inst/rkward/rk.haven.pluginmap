@@ -1,0 +1,97 @@
+<!DOCTYPE
+	rkpluginmap
+>
+<document
+	base_prefix=""
+	namespace="ProfessionalImporthaven"
+	id="ProfessionalImporthaven_rkward"
+	po_id="ProfessionalImporthaven_rkward"
+	priority="medium"
+>
+	<!--
+		this code was generated using the rkwarddev package.
+	perhaps don't make changes here, but in the rkwarddev script instead!
+	-->
+	<!--
+		<dependencies>
+		</dependencies>
+	-->
+	<about
+		name="rk.haven"
+		shortinfo="Professional GUI importer for SPSS, Stata, and SAS datasets using the haven package. Manages encodings, value labels, and RKWard metadata synchronization."
+		longinfo="Professional GUI importer for SPSS, Stata, and SAS datasets using the haven package. Manages encodings, value labels, and RKWard metadata synchronization."
+		version="0.0.1"
+		releasedate="2026-09-23"
+		url="https://github.com/AlfCano/rk.haven"
+		license="GPL (&gt;= 3)"
+	>
+		<author
+			given="Alfonso"
+			family="Cano"
+			email="alfonso.cano@correo.buap.mx"
+			role="aut, cre"
+		/>
+	</about>
+	<require
+		map="rkward::menu"
+	/>
+	<require
+		map="rkward::embedded"
+	/>
+	<components>
+		<component
+			id="cmp_PrfssnlImprthvnPrfssnlExp"
+			label="Professional Export (haven)"
+			type="standard"
+			file="plugins/ProfessionalExporthaven.xml"
+		>
+		</component>
+		<component
+			id="cmp_PrfssnlImprthvnPrfssnlImp"
+			label="Professional Import (haven)"
+			type="standard"
+			file="plugins/ProfessionalImporthaven.xml"
+		>
+		</component>
+	</components>
+	<hierarchy>
+		<menu
+			id="file"
+			label="File"
+		>
+			<menu
+				id="export"
+				label="export"
+			>
+				<entry
+					component="cmp_PrfssnlImprthvnPrfssnlExp"
+				/>
+			</menu>
+		</menu>
+		<menu
+			id="file"
+			label="File"
+		>
+			<menu
+				id="import"
+				label="import"
+			>
+				<entry
+					component="cmp_PrfssnlImprthvnPrfssnlImp"
+				/>
+			</menu>
+		</menu>
+	</hierarchy>
+	<!--
+		<context
+			id="x11"
+		>
+		</context>
+	-->
+	<!--
+		<context
+			id="import"
+		>
+		</context>
+	-->
+</document>

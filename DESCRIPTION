@@ -1,0 +1,19 @@
+Package: rk.haven
+Type: Package
+Title: Professional GUI importer for SPSS, Stata, and SAS datasets
+        using the haven package. Manages encodings, value labels, and
+        RKWard metadata synchronization.
+Version: 0.0.1
+Date: 2026-09-23
+Author: Alfonso Cano
+Maintainer: Alfonso Cano <alfonso.cano@correo.buap.mx>
+Enhances: rkward
+Description: Professional GUI importer for SPSS, Stata, and SAS
+        datasets using the haven package. Manages encodings, value
+        labels, and RKWard metadata synchronization.
+License: GPL (>= 3)
+Encoding: UTF-8
+LazyLoad: yes
+URL: https://github.com/AlfCano/rk.haven
+Authors@R: person(given="Alfonso", family="Cano",
+        email="alfonso.cano@correo.buap.mx", role=c("aut", "cre"))

@@ -1,0 +1,81 @@
+<!DOCTYPE rkplugin >
+<document>
+	<!--
+		this code was generated using the rkwarddev package.
+	perhaps don't make changes here, but in the rkwarddev script instead!
+	-->
+	<code file="ProfessionalImporthaven.js" />
+	<help file="ProfessionalImporthaven.rkh" />
+	<!--
+		<dependencies>
+		</dependencies>
+	-->
+	<logic>
+		<!--
+			<convert id="!edit!" sources="!edit!" mode="equals" standard="!edit!" />
+		-->
+		<!--
+			<connect governor="!edit!.state" client="!edit!.enabled" />
+		-->
+	</logic>
+	<dialog label="Professional Data Importer (haven)">
+		<tabbook>
+			<tab label="File &amp; Format" id="tab_FileFrmt">
+				<column id="clm_bDFSPSSSSA">
+					<browser label="Data File (SPSS, Stata, SAS)" type="file" id="c1_file" />
+					<frame id="frm_d1FFASPSSS">
+						<dropdown id="c1_fmt" label="File Format">
+							<option label="Auto-detect from extension" value="auto" checked="true" />
+							<option label="SPSS (.sav, .zsav)" value="spss" />
+							<option label="Stata (.dta)" value="stata" />
+							<option label="SAS (.sas7bdat)" value="sas" />
+							<option label="SAS Transport (.xpt)" value="xpt" />
+						</dropdown>
+						<dropdown id="c1_enc" label="Character Encoding (Fixes accents/ñ)">
+							<option label="UTF-8 (Modern standard)" value="UTF-8" checked="true" />
+							<option label="Latin1 (ISO-8859-1 / Old SPSS)" value="latin1" />
+							<option label="Windows CP1252" value="cp1252" />
+						</dropdown>
+					</frame>
+					<saveobject label="Save Dataset as" checkable="true" checked="true" initial="imported_data" id="c1_save" />
+					<stretch />
+				</column>
+			</tab>
+			<tab label="Metadata &amp; Labels" id="tab_MtdtLbls">
+				<column id="clm_f1TVLAKBCR">
+					<frame id="frm_r1TVLAKBCR">
+						<radio id="c1_val_lbl" label="Treatment of Value Labels">
+							<option label="A. Keep original structure (haven_labelled)" value="keep" checked="true" />
+							<option label="B. Convert to R Factors (haven::as_factor)" value="factor" />
+							<option label="C. Extract numeric codes only (haven::zap_labels)" value="zap" />
+						</radio>
+						<checkbox id="c1_user_na" label="Preserve User-Defined NAs (e.g., 99 = Not Applicable)" value="TRUE" />
+					</frame>
+					<checkbox id="c1_sync_rk" label="Synchronize Variable Labels with RKWard Environment" value="TRUE" checked="true" />
+					<stretch />
+				</column>
+			</tab>
+			<tab label="Big Data Optimization" id="tab_BgDtOptm">
+				<column id="clm_fMSMSIN0IA">
+					<frame label="Memory Savers" id="frm_MmrySvrs">
+						<spinbox label="Import only the first N rows (0 = Import All)" id="c1_nmax" min="0" max="1e+08" type="integer" />
+						<text id="txt_TpYcnsdp">
+							Tip: You can use dplyr syntax like c(id, age) or starts_with('q')
+						</text>
+						<input label="Select columns (leave blank for all)" id="c1_cols" />
+						<checkbox id="c1_clean" label="Sanitize column names to snake_case (janitor::clean_names)" value="TRUE" />
+					</frame>
+					<stretch />
+				</column>
+			</tab>
+			<tab label="Post-Import Actions" id="tab_PstImprA">
+				<column id="clm_c1ORKWDETR">
+					<checkbox id="c1_edit" label="Open RKWard Data Editor after import" value="TRUE" checked="true" />
+					<checkbox id="c1_glimpse" label="Print Codebook/Structure (dplyr::glimpse)" value="TRUE" checked="true" />
+					<preview id="preview_results" mode="data" label="Preview (First 50 rows)" />
+					<stretch />
+				</column>
+			</tab>
+		</tabbook>
+	</dialog>
+</document>

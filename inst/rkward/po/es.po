@@ -1,0 +1,132 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: rk.haven 0.0.1\n"
+"Report-Msgid-Bugs-To: alfonso.cano@correo.buap.mx\n"
+"POT-Creation-Date: 2026-09-19 20:18-0600\n"
+"PO-Revision-Date: 2026-09-19 20:18-0600\n"
+"Last-Translator: \n"
+"Language-Team: Spanish\n"
+"Language: es\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+msgid "Professional Import (haven)"
+msgstr "Importación Profesional (haven)"
+
+msgid "Professional Data Importer (haven)"
+msgstr "Importador de Datos Profesional (haven)"
+
+msgid "Data File (SPSS, Stata, SAS)"
+msgstr "Archivo de Datos (SPSS, Stata, SAS)"
+
+msgid "File Format"
+msgstr "Formato de Archivo"
+
+msgid "Auto-detect from extension"
+msgstr "Autodetectar por extensión"
+
+msgid "SPSS (.sav, .zsav)"
+msgstr "SPSS (.sav, .zsav)"
+
+msgid "Stata (.dta)"
+msgstr "Stata (.dta)"
+
+msgid "SAS (.sas7bdat)"
+msgstr "SAS (.sas7bdat)"
+
+msgid "SAS Transport (.xpt)"
+msgstr "SAS Transport (.xpt)"
+
+msgid "Character Encoding (Fixes accents/ñ)"
+msgstr "Codificación de Caracteres (Corrige acentos/ñ)"
+
+msgid "UTF-8 (Modern standard)"
+msgstr "UTF-8 (Estándar moderno)"
+
+msgid "Latin1 (ISO-8859-1 / Old SPSS)"
+msgstr "Latin1 (ISO-8859-1 / SPSS antiguo)"
+
+msgid "Windows CP1252"
+msgstr "Windows CP1252"
+
+msgid "Treatment of Value Labels"
+msgstr "Tratamiento de Etiquetas de Valor"
+
+msgid "A. Keep original structure (haven_labelled)"
+msgstr "A. Mantener estructura original (haven_labelled)"
+
+msgid "B. Convert to R Factors (haven::as_factor)"
+msgstr "B. Convertir a Factores de R (haven::as_factor)"
+
+msgid "C. Extract numeric codes only (haven::zap_labels)"
+msgstr "C. Extraer solo códigos numéricos (haven::zap_labels)"
+
+msgid "Preserve User-Defined NAs (e.g., 99 = Not Applicable)"
+msgstr "Preservar NAs definidos por el usuario (ej., 99 = No Aplica)"
+
+msgid "Synchronize Variable Labels with RKWard Environment"
+msgstr "Sincronizar Etiquetas de Variables con el Entorno de RKWard"
+
+msgid "Import only the first N rows (0 = Import All)"
+msgstr "Importar solo las primeras N filas (0 = Importar Todo)"
+
+msgid "Tip: You can use dplyr syntax like c(id, age) or starts_with('q')"
+msgstr "Consejo: Puedes usar sintaxis dplyr como c(id, age) o starts_with('q')"
+
+msgid "Select columns (leave blank for all)"
+msgstr "Seleccionar columnas (dejar en blanco para todas)"
+
+msgid "Sanitize column names to snake_case (janitor::clean_names)"
+msgstr "Limpiar nombres de columnas a snake_case (janitor::clean_names)"
+
+msgid "Save Dataset as"
+msgstr "Guardar Conjunto de Datos como"
+
+msgid "Open RKWard Data Editor after import"
+msgstr "Abrir Editor de Datos de RKWard tras importar"
+
+msgid "Print Codebook/Structure (dplyr::glimpse)"
+msgstr "Imprimir Libro de Códigos/Estructura (dplyr::glimpse)"
+
+msgid "Preview (First 50 rows)"
+msgstr "Previsualizar (Primeras 50 filas)"
+
+msgid "File & Format"
+msgstr "Archivo y Formato"
+
+msgid "Metadata & Labels"
+msgstr "Metadatos y Etiquetas"
+
+msgid "Memory Savers"
+msgstr "Ahorro de Memoria"
+
+msgid "Big Data Optimization"
+msgstr "Optimización para Big Data"
+
+msgid "Post-Import Actions"
+msgstr "Acciones Post-Importación"
+
+msgid "Professional Export (haven)"
+msgstr "Exportación Profesional (haven)"
+
+msgid "Professional Data Exporter (haven)"
+msgstr "Exportador de Datos Profesional (haven)"
+
+msgid "Dataframe to export"
+msgstr "Dataframe a exportar"
+
+msgid "Export Format"
+msgstr "Formato de Exportación"
+
+msgid "SPSS (.sav)"
+msgstr "SPSS (.sav)"
+
+msgid "Destination File"
+msgstr "Archivo de Destino"
+
+msgid "Automatically append extension if missing"
+msgstr "Añadir extensión automáticamente si falta"
+
+msgid "Save Options"
+msgstr "Opciones de Guardado"
